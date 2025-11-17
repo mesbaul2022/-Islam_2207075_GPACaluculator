@@ -9,7 +9,10 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+
     <Label text="Welcome to GPA Calculator" />
+
     <Label text="Calculate your Grade Point Average" />
+
     <Button mnemonicParsing="false" onAction="#switchToScene2" text="Start GPA Calculator" />
 </VBox>

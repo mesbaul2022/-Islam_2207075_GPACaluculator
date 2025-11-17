@@ -2,7 +2,7 @@
 
 A simple Student Grading System that helps students calculate their GPA by adding courses and grades.
 
-## 📋 Project Description
+##  Project Description
 
 This is a beginner-friendly JavaFX application that allows students to:
 - Add multiple courses with details (name, code, credits, teachers, grade)
@@ -10,7 +10,7 @@ This is a beginner-friendly JavaFX application that allows students to:
 - Calculate overall GPA based on weighted grades
 - View results in a formatted report
 
-## 🎯 Features
+##  Features
 
 - **Home Screen**: Welcome page with a start button
 - **Course Entry**: Form to add course information
@@ -19,14 +19,14 @@ This is a beginner-friendly JavaFX application that allows students to:
 - **Grade System**: Supports grades from A+ to F with grade points
 - **Input Validation**: Alerts for missing or invalid data
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Java** - Programming Language
 - **JavaFX** - GUI Framework
 - **FXML** - UI Layout
 - **SceneBuilder** - Visual FXML Editor
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -45,7 +45,7 @@ src/
         └── scene3.fxml              # Result screen layout
 ```
 
-## 🖥️ Application Interfaces
+##  Application Interfaces
 
 ### Interface 1: Home Screen (scene1.fxml)
 
@@ -177,7 +177,7 @@ Shows the calculated GPA and detailed course report.
 └──────────────────────────────────────────────┘
 ```
 
-## 🎓 Grade Point System
+##  Grade Point System
 
 | Grade | Grade Point |
 |-------|-------------|
@@ -195,7 +195,7 @@ Shows the calculated GPA and detailed course report.
 
 
 
-## 📝 How to Use
+##  How to Use
 
 1. **Start Application**
    - Run the program
@@ -212,6 +212,6 @@ Shows the calculated GPA and detailed course report.
    - View your results and detailed report
 
 
-## 👨‍💻 Author
+##  Author
 
 Mesbaul Islam - [https://github.com/mesbaul2022](https://github.com/mesbaul2022)

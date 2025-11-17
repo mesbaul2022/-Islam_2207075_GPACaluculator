@@ -8,6 +8,4 @@
    <center>
       <Button mnemonicParsing="false" onAction="#switchToScene2" text="Button" BorderPane.alignment="CENTER" />
    </center>
-
-
 </BorderPane>

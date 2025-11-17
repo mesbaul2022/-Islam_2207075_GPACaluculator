@@ -59,7 +59,7 @@ The welcome screen where the application starts.
 **Functionality:**
 - Click the button to navigate to the course entry screen
 
-**Screenshot Description:**
+**Home Screen**
 ```
 ┌─────────────────────────────────────┐
 │                                     │
@@ -97,7 +97,7 @@ The main screen where users input course information.
 - When total credits reach 12, click "Calculate GPA" to see results
 - Shows error alerts for missing fields or credit overflow
 
-**Screenshot Description:**
+**Course Entry Screen**
 ```
 ┌─────────────────────────────────────────────────────────┐
 │ GPA Calculator - Add Courses                            │
@@ -142,7 +142,7 @@ Shows the calculated GPA and detailed course report.
 - Shows weighted GPA calculation
 - Read-only display (cannot edit)
 
-**Screenshot Description:**
+**GPA Result Screen**
 ```
 ┌──────────────────────────────────────────────┐
 │ GPA Calculation Result                       │

@@ -25,7 +25,6 @@ public class Course {
     public String getTeacher2() { return teacher2; }
     public String getGrade() { return grade; }
 
-    // Convert grade to grade point
     public double getGradePoint() {
         switch (grade) {
             case "A+": return 4.0;

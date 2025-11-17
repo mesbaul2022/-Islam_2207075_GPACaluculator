@@ -43,6 +43,7 @@ public class Scene3Controller {
         result.append(String.format("✓ Total Grade Points: %.2f\n", totalPoints));
         result.append(String.format("\n★ FINAL GPA: %.2f ★\n", gpa));
 
+
         result.append("\n╔═══════════════════════════════════════════════════════════╗\n");
         result.append("║             Congratulations on your achievement!          ║\n");
         result.append("╚═══════════════════════════════════════════════════════════╝");

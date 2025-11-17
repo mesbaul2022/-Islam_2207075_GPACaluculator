@@ -17,7 +17,6 @@ public class HelloController {
     private Scene scene;
     private Parent root;
 
-    // Scene 2 components
     @FXML private TextField courseNameField;
     @FXML private TextField courseCodeField;
     @FXML private TextField creditField;
@@ -28,13 +27,12 @@ public class HelloController {
     @FXML private Button calculateButton;
     @FXML private TextArea coursesDisplayArea;
 
-    // Scene 3 components
     @FXML private Label gpaLabel;
     @FXML private TextArea resultArea;
 
     private ArrayList<Course> courses = new ArrayList<>();
     private int totalCreditsEntered = 0;
-    private final int REQUIRED_CREDITS = 12; // Change this value as needed
+    private final int REQUIRED_CREDITS = 12;
 
     // Initialize method for Scene 2
     @FXML
@@ -46,7 +44,6 @@ public class HelloController {
         }
     }
 
-    // Switch from Scene 1 to Scene 2
     public void switchToScene2(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -55,7 +52,7 @@ public class HelloController {
         stage.show();
     }
 
-    // Add course button action
+
     @FXML
     public void addCourse(ActionEvent event) {
         try {
@@ -86,7 +83,6 @@ public class HelloController {
         }
     }
 
-    // Update the course display area
     private void updateCourseDisplay() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < courses.size(); i++) {

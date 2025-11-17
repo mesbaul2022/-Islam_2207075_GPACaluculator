@@ -15,40 +15,32 @@ public class Scene3Controller {
         int totalCredits = 0;
 
         StringBuilder result = new StringBuilder();
-        result.append("╔═══════════════════════════════════════════════════════════╗\n");
-        result.append("║              STUDENT GRADE REPORT                         ║\n");
-        result.append("╚═══════════════════════════════════════════════════════════╝\n\n");
-
+        result.append("STUDENT GRADE REPORT\n\n");
         result.append("Course Details:\n");
-        result.append("─────────────────────────────────────────────────────────────\n");
+        result.append("----------------------------------------\n\n");
 
         for (Course course : courses) {
             totalPoints += course.getGradePoint() * course.getCourseCredit();
             totalCredits += course.getCourseCredit();
 
-            result.append(String.format("\n📚 Course Name: %s\n", course.getCourseName()));
-            result.append(String.format("   Course Code: %s\n", course.getCourseCode()));
-            result.append(String.format("   Credits: %d\n", course.getCourseCredit()));
-            result.append(String.format("   Teacher 1: %s\n", course.getTeacher1()));
+            result.append("Course Name: " + course.getCourseName() + "\n");
+            result.append("Course Code: " + course.getCourseCode() + "\n");
+            result.append("Credits: " + course.getCourseCredit() + "\n");
+            result.append("Teacher 1: " + course.getTeacher1() + "\n");
             if (!course.getTeacher2().isEmpty()) {
-                result.append(String.format("   Teacher 2: %s\n", course.getTeacher2()));
+                result.append("Teacher 2: " + course.getTeacher2() + "\n");
             }
-            result.append(String.format("   Grade: %s (%.2f)\n", course.getGrade(), course.getGradePoint()));
-            result.append("─────────────────────────────────────────────────────────────\n");
+            result.append("Grade: " + course.getGrade() + " (" + course.getGradePoint() + ")\n");
+            result.append("----------------------------------------\n\n");
         }
 
-        double gpa = totalCredits > 0 ? totalPoints / totalCredits : 0.0;
+        double gpa = totalPoints / totalCredits;
 
-        result.append(String.format("\n\n✓ Total Credits Completed: %d\n", totalCredits));
-        result.append(String.format("✓ Total Grade Points: %.2f\n", totalPoints));
-        result.append(String.format("\n★ FINAL GPA: %.2f ★\n", gpa));
-
-
-        result.append("\n╔═══════════════════════════════════════════════════════════╗\n");
-        result.append("║             Congratulations on your achievement!          ║\n");
-        result.append("╚═══════════════════════════════════════════════════════════╝");
+        result.append("\nTotal Credits: " + totalCredits + "\n");
+        result.append("Total Grade Points: " + totalPoints + "\n");
+        result.append("\nFINAL GPA: " + String.format("%.2f", gpa) + "\n");
 
         resultArea.setText(result.toString());
-        gpaLabel.setText(String.format("Your GPA: %.2f", gpa));
+        gpaLabel.setText("Your GPA: " + String.format("%.2f", gpa));
     }
 }

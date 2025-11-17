@@ -42,4 +42,7 @@ public class Course {
             default: return 0.0;
         }
     }
+
+    public int getCourseCredit() {
+    }
 }
